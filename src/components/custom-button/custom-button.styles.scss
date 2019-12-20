@@ -15,8 +15,21 @@
   cursor: pointer;
 
   &:hover {
-    background-color: white;
+    background-color: rgb(151, 146, 146);
     color: black;
     border: 1px solid black;
   }
+
+  &.google-sign-in{
+    background: #4285f4;
+    color: white;
+
+
+    &:hover {
+      background-color: #357ae8; 
+      border: none;
+    }
+  }
+
+
 }
