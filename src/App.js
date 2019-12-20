@@ -1,3 +1,7 @@
+
+
+
+
 import React from 'react';
 
 import './App.css';
@@ -9,7 +13,7 @@ import {Switch, Route} from 'react-router-dom';
 
 import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
-import SignInAndSignUpPage from './pages/sign-in-sign-up/sign-in-sign-up.component';
+import SignInAndSignUpPage from './pages/sign-in-sign-up/sign-in-and-sign-up.component';
 
 
 
