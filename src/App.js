@@ -15,7 +15,7 @@ import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
 import SignInAndSignUpPage from './pages/sign-in-sign-up/sign-in-and-sign-up.component';
 import {auth, createUserProfileDocument} from './firebase/firebase.utils';
-import {setCurrentUser} from './redux/user/user.actions';
+import {setCurrentUser} from './redux/user/user.actions'; 
 
 
 class App extends React.Component {
@@ -32,7 +32,7 @@ class App extends React.Component {
       if(userAuth) {
         const userRef = await createUserProfileDocument (userAuth);
 
-         userRef.onSnapshot(snapShot => {
+         userRef.onSnapshot (snapShot => {
           setCurrentUser({
                 id: snapShot.id,
                 ...snapShot.data()
