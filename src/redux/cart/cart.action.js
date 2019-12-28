@@ -13,3 +13,8 @@ export const addItem = item => ({    //new action called addItem , it is functio
      
     payload: item
 });
+
+export const clearItemFromCart = item => ({
+    type: CartActionTypes.CLEAR_ITEM_FROM_CART,
+    payload:item    
+});
